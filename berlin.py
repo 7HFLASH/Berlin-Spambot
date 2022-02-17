@@ -1566,7 +1566,47 @@ async def ping(e):
 
 
 
+
+ @str1.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str2.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str3.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str4.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str5.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str6.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str7.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str8.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str9.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str10.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str11.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str12.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str13.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str14.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str15.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str16.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str17.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str18.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str19.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str20.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str21.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str22.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str23.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str24.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str25.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str26.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str27.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str28.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str29.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+@str30.on(events.NewMessage(incoming=True, pattern=r"\.alive"))
+async def alive(e):
+    if e.sender_id in SMEX_USERS:
+        start = datetime.now()
+        text = "𝙲𝙷𝙴𝙲𝙺𝙸𝙽𝙶 !!"
+        event = await e.reply(text, parse_mode=None, link_preview=None )
+        end = datetime.now()
+        ms = (end-start).microseconds / 1000
+        await event.edit(f".🤖 I Am Still alive Lomdike !!!!\n`{ms}` 𝗺𝘀\n          〄 ╔»⟦★𝙁𝙇𝘼𝙎𝙃★⟧«╗ SᑭᗩᗰᗰEᖇ ᗷOT 〄")
         
+                      
         
 
 @str1.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
